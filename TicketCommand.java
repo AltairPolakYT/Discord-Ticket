@@ -23,7 +23,7 @@ public class TicketsCommand extends ListenerAdapter {
         EmbedBuilder builder;
         String[] args = event.getMessage().getContentRaw().split(" ");
 
-            if (event.getMessage().getAuthor().getId().equals("Id waszego konta")) {
+            if (event.getMessage().getAuthor().getId().equals("Id twojego konta")) {
                 if (args[0].equalsIgnoreCase("$$Ticket")) {
                     builder = new EmbedBuilder();
                     builder.setTitle("Tickety!");
